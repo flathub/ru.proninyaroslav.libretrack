@@ -12,6 +12,8 @@
     </recommends>
     <developer_name>proninyaroslav</developer_name>
     <url type="homepage">https://github.com/proninyaroslav/libretrack</url>
+    <url type="bugtracker">https://github.com/proninyaroslav/libretrack/issues</url>
+    <url type="donation">https://github.com/proninyaroslav/libretrack#-donation</url>
     <description>
         <p>Track postal items directly on your device using accounts of postal services. The app respects your privacy and freedom: you don't use third-party online services.</p>
         <p>📋 Features</p>
@@ -35,6 +37,9 @@
         <p>Join the discussion on Matrix: #libretrack:matrix.org</p>
         <p>Join the discussion on Telegram: @LibreTrack</p>
     </description>
+    <categories>
+        <category>Network</category>
+    </categories>
     <screenshots>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s1.png</image>
