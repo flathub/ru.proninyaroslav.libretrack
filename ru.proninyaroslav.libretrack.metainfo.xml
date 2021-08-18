@@ -30,6 +30,7 @@
             <li>Material Design 2.0</li>
             <li>Night theme</li>
             <li>Responsive UI for different devices form factors</li>
+            <li>System tray support. Note: for support in GNOME, please install gnome-shell-extension-appindicator or similar extension.</li>
         </ul>
         <p>Join the discussion on Matrix: #libretrack:matrix.org</p>
         <p>Join the discussion on Telegram: @LibreTrack</p>
