@@ -64,8 +64,8 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/proninyaroslav/libretrack/releases/download/1.2.0/libretrack-1.2.0-linux-x86_64.tar.gz
-        sha256: a115f7ffd554d56f052a37b8d2876813bf287efd73d4c608e9d55805ac505627
+        url: https://github.com/proninyaroslav/libretrack/releases/download/1.3.0/libretrack-1.3.0-linux-x86_64.tar.gz
+        sha256: cbd8ea706e742f9dbe69edcdef3e80adf70cf2d8be16e238ad12943e7555245c
         dest: libretrack
         strip-components: 0
         x-checker-data:
@@ -75,8 +75,8 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        url: https://github.com/proninyaroslav/libretrack/releases/download/1.2.0/libretrack-1.2.0-linux-arm64.tar.gz
-        sha256: aa7859d0bda18f5e44fab23e47de3e9afc96f120ec56480df47890af2f561453
+        url: https://github.com/proninyaroslav/libretrack/releases/download/1.3.0/libretrack-1.3.0-linux-arm64.tar.gz
+        sha256: 813e981f656d9bfbbbd2f8eee77ceb14f8310540165a26ec0a7c4d264cf90268
         dest: libretrack
         strip-components: 0
         x-checker-data:
