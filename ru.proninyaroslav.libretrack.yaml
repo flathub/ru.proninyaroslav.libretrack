@@ -17,7 +17,8 @@ finish-args:
   - --socket=pulseaudio
   # As a tracking application, networking is required
   - --share=network
-  - --device=all
+  # Required to provide hardware acceleration
+  - --device=dri
   # Required for notifications in various desktop environments
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
