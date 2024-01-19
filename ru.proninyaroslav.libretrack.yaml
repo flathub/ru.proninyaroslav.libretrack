@@ -38,14 +38,13 @@ modules:
   - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
   - shared-modules/libsecret/libsecret.json
   - name: libjsoncpp
-    buildsystem: cmake-ninja
-    config-opts:
-      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DBUILD_SHARED_LIBS=ON
+    buildsystem: meson
+    config_opts:
+      - --default-library=shared
     sources:
       - type: archive
-        url: https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.7.5.tar.gz
-        sha256: 4338c6cab8af8dee6cdfd54e6218bd0533785f552c6162bb083f8dd28bf8fbbe
+        url: https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
+        sha256: f409856e5920c18d0c2fb85276e24ee607d2a09b5e7d5f0a371368903c275da2
   - name: libretrack
     buildsystem: simple
     build-commands:
