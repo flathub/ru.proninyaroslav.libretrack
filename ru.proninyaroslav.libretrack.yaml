@@ -73,7 +73,7 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        url: https://github.com/proninyaroslav/libretrack/releases/download/1.5.0/LibreTrack-1.5.0-arm64-v8a.apk
+        url: https://github.com/proninyaroslav/libretrack/releases/download/1.5.0/libretrack-1.5.0-linux-arm64.tar.gz
         sha256: c2e3a61bf46126915b9aa7c71b87f213c1c70ca750e5d9c092ca611e6ea29112
         dest: libretrack
         strip-components: 0
