@@ -41,26 +41,33 @@
         <category>Network</category>
     </categories>
     <screenshots>
-        <screenshot>
+        <screenshot type="default">
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s1.png</image>
+            <caption>Main window</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s2.png</image>
+            <caption>Dark theme</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s3.png</image>
+            <caption>Package details</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s4.png</image>
+            <caption>Package activity</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s5.png</image>
+            <caption>Tracking history</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s6.png</image>
+            <caption>Add packages</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s7.png</image>
+            <caption>Barcode generator</caption>
         </screenshot>
     </screenshots>
     <launchable type="desktop-id">ru.proninyaroslav.libretrack.desktop</launchable>
