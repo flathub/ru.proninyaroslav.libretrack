@@ -1,6 +1,6 @@
 app-id: ru.proninyaroslav.libretrack
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: "23.08"
 sdk: org.freedesktop.Sdk
 command: libretrack
 separate-locales: false
@@ -17,7 +17,8 @@ finish-args:
   - --socket=pulseaudio
   # As a tracking application, networking is required
   - --share=network
-  - --device=all
+  # Required to provide hardware acceleration
+  - --device=dri
   # Required for notifications in various desktop environments
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
@@ -36,14 +37,13 @@ modules:
   - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
   - shared-modules/libsecret/libsecret.json
   - name: libjsoncpp
-    buildsystem: cmake-ninja
-    config-opts:
-      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DBUILD_SHARED_LIBS=ON
+    buildsystem: meson
+    config_opts:
+      - --default-library=shared
     sources:
       - type: archive
-        url: https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.7.5.tar.gz
-        sha256: 4338c6cab8af8dee6cdfd54e6218bd0533785f552c6162bb083f8dd28bf8fbbe
+        url: https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
+        sha256: f409856e5920c18d0c2fb85276e24ee607d2a09b5e7d5f0a371368903c275da2
   - name: libretrack
     buildsystem: simple
     build-commands:
@@ -62,8 +62,8 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/proninyaroslav/libretrack/releases/download/1.3.0/libretrack-1.3.0-linux-x86_64.tar.gz
-        sha256: cbd8ea706e742f9dbe69edcdef3e80adf70cf2d8be16e238ad12943e7555245c
+        url: https://github.com/proninyaroslav/libretrack/releases/download/1.5.0/libretrack-1.5.0-linux-x86_64.tar.gz
+        sha256: 41dfebd22f82f37825fea971918a84da5fac21ca8c42cdf8e448d1e41182b429
         dest: libretrack
         strip-components: 0
         x-checker-data:
@@ -73,8 +73,8 @@ modules:
       - type: archive
         only-arches:
           - aarch64
-        url: https://github.com/proninyaroslav/libretrack/releases/download/1.3.0/libretrack-1.3.0-linux-arm64.tar.gz
-        sha256: 813e981f656d9bfbbbd2f8eee77ceb14f8310540165a26ec0a7c4d264cf90268
+        url: https://github.com/proninyaroslav/libretrack/releases/download/1.5.0/libretrack-1.5.0-linux-arm64.tar.gz
+        sha256: c2e3a61bf46126915b9aa7c71b87f213c1c70ca750e5d9c092ca611e6ea29112
         dest: libretrack
         strip-components: 0
         x-checker-data:

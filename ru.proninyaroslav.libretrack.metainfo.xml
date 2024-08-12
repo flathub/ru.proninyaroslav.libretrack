@@ -41,30 +41,49 @@
         <category>Network</category>
     </categories>
     <screenshots>
-        <screenshot>
+        <screenshot type="default">
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s1.png</image>
+            <caption>Main window</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s2.png</image>
+            <caption>Dark theme</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s3.png</image>
+            <caption>Package details</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s4.png</image>
+            <caption>Package activity</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s5.png</image>
+            <caption>Tracking history</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s6.png</image>
+            <caption>Add packages</caption>
         </screenshot>
         <screenshot>
             <image type="source">https://raw.githubusercontent.com/proninyaroslav/libretrack/master/art/linux_screenshots/s7.png</image>
+            <caption>Barcode generator</caption>
         </screenshot>
     </screenshots>
     <launchable type="desktop-id">ru.proninyaroslav.libretrack.desktop</launchable>
     <releases>
+        <release version="1.5.0" date="2024-08-12">
+            <url type="details">https://github.com/proninyaroslav/libretrack/blob/1.5.0/NEWS.md#version-150-2024-08-12</url>
+            <description>
+                <p>What's new:</p>
+                <ul>
+                    <li>Added PostNord service</li>
+                    <li>Added QR code generation option</li>
+                    <li>[Linux] Fixed hiding window in the tray icon</li>
+                    <li>Small fixes</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.3.0" date="2021-08-24"/>
         <release version="1.2.0" date="2021-08-12"/>
     </releases>
