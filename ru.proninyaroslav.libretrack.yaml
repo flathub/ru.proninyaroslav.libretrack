@@ -62,8 +62,8 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/proninyaroslav/libretrack/releases/download/debug/libretrack-debug-linux-x86_64.tar.gz
-        sha256: 4fe5864e75c083b71a4d4f9d633780e167cf6422dffa5942316161ae4db1c9db
+        url: https://github.com/proninyaroslav/libretrack/releases/download/debug-version/libretrack-debug-version-linux-x86_64.tar.gz
+        sha256: b901b6f18544e6fea6c7b7e549d4e06ef1eb4d1fa5692137c2145fdc5b1b5420
         dest: libretrack
         strip-components: 0
         x-checker-data:
