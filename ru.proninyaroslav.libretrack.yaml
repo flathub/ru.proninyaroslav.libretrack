@@ -62,8 +62,8 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://proninyaroslav.ru/mirror/bundle.tar.gz
-        sha256: d6c9a61e17ea5d42074255b5ef4c6a1598513f9a5b5d9be73501c4a0bff58df8
+        url: https://github.com/proninyaroslav/libretrack/releases/download/debug/libretrack-debug-linux-x86_64.tar.gz
+        sha256: 4fe5864e75c083b71a4d4f9d633780e167cf6422dffa5942316161ae4db1c9db
         dest: libretrack
         strip-components: 0
         x-checker-data:
