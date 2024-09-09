@@ -79,12 +79,12 @@
                 <ul>
                     <li>Added "unlimited" tracking frequency limit</li>
                     <li>Migration to asynchronous (non-blocking UI) app preferences</li>
-                    <li>Bugfixes:</li>
-                    <ul>
-                        <li>Infinite progress bar after closing a dialog on tablets and desktop</li>
-                        <li>Recognition of some non-standard system locales</li>
-                        <li>Logic of work and display of postal services with the delivered status</li>
-                    </ul>
+                </ul>
+                <p>Bugfixes:</p>
+                <ul>
+                    <li>Infinite progress bar after closing a dialog on tablets and desktop</li>
+                    <li>Recognition of some non-standard system locales</li>
+                    <li>Logic of work and display of postal services with the delivered status</li>
                 </ul>
             </description>
         </release>
