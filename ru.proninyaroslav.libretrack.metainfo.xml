@@ -72,6 +72,22 @@
     </screenshots>
     <launchable type="desktop-id">ru.proninyaroslav.libretrack.desktop</launchable>
     <releases>
+        <release version="1.6.0" date="2024-09-09">
+            <url type="details">https://github.com/proninyaroslav/libretrack/blob/1.6.0/NEWS.md#version-160-2024-09-09</url>
+            <description>
+                <p>What's new:</p>
+                <ul>
+                    <li>Added "unlimited" tracking frequency limit</li>
+                    <li>Migration to asynchronous (non-blocking UI) app preferences</li>
+                </ul>
+                <p>Bugfixes:</p>
+                <ul>
+                    <li>Infinite progress bar after closing a dialog on tablets and desktop</li>
+                    <li>Recognition of some non-standard system locales</li>
+                    <li>Logic of work and display of postal services with the delivered status</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.5.1" date="2024-08-20">
             <url type="details">https://github.com/proninyaroslav/libretrack/blob/1.5.0/NEWS.md#version-150-2024-08-12</url>
             <description>
