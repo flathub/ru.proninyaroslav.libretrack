@@ -76,6 +76,16 @@
     </screenshots>
     <launchable type="desktop-id">ru.proninyaroslav.libretrack.desktop</launchable>
     <releases>
+        <release version="1.7.0" date="2024-12-30">
+            <url type="details">https://github.com/proninyaroslav/libretrack/blob/1.7.0/NEWS.md#version-170-2024-12-30</url>
+            <description>
+                <p>What's new:</p>
+                <ul>
+                    <li>"I'm receiver" and "I'm shipper" categories added</li>
+                    <li>Saving the current parcels list tab after closing the app</li>
+                </ul>
+            </description>
+        </release>
         <release version="1.6.1" date="2024-09-10">
             <url type="details">https://github.com/proninyaroslav/libretrack/blob/1.6.1/NEWS.md#version-161-2024-09-10</url>
             <description>
