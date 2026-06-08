@@ -1,6 +1,6 @@
 app-id: ru.proninyaroslav.libretrack
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 command: libretrack
 separate-locales: false
@@ -30,12 +30,9 @@ finish-args:
   - --persist=.dart_tool
 cleanup:
   - /include
-  - /lib/cmake
   - /lib/pkgconfig
-  - /lib/*.a
 modules:
   - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
-  - shared-modules/libsecret/libsecret.json
   - name: libjsoncpp
     buildsystem: meson
     config_opts:
@@ -44,6 +41,7 @@ modules:
       - type: archive
         url: https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz
         sha256: f409856e5920c18d0c2fb85276e24ee607d2a09b5e7d5f0a371368903c275da2
+
   - name: libretrack
     buildsystem: simple
     build-commands:
@@ -70,6 +68,8 @@ modules:
           type: json
           url: https://api.github.com/repos/proninyaroslav/libretrack/releases/latest
           version-query: .tag_name
+          url-query: .assets[] | select(.name=="libretrack-" + $version + "-linux-x86_64.tar.gz") | .browser_download_url
+
       - type: archive
         only-arches:
           - aarch64
@@ -81,6 +81,8 @@ modules:
           type: json
           url: https://api.github.com/repos/proninyaroslav/libretrack/releases/latest
           version-query: .tag_name
+          url-query: .assets[] | select(.name=="libretrack-" + $version + "-linux-arm64.tar.gz") | .browser_download_url
+
       - type: file
         path: ru.proninyaroslav.libretrack.metainfo.xml
       - type: file
